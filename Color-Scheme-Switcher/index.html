@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .main {
+        flex-direction: column;
+        height: 350px;
+        /* width: 800px; */
+        margin: auto;
+        display: flex;
+        margin-top: 100px;
+    }
+
+    .box {
+        margin: auto;
+        display: inline-block;
+        box-shadow: 1px 1px 10px grey;
+        border-radius: 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: rgb(222, 222, 222);
+    }
+
+    .ColorBox {
+        height: 90px;
+        width: 90px;
+        background-color: rgb(181, 169, 169);
+        margin: 20px;
+        box-shadow: 1px 1px 5px black;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+
+    #header{
+        box-shadow: 1px 1px 10px rgb(0, 0, 0); 
+        width: 400px;
+        margin: auto;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .ColorBox:nth-child(1) {
+        background-color: white;
+    }
+
+    .ColorBox:nth-child(2) {
+        background-color: red;
+    }
+
+    .ColorBox:nth-child(3) {
+        background-color: blue;
+    }
+
+    .ColorBox:nth-child(4) {
+        background-color: green;
+    }
+
+    .ColorBox:nth-child(5) {
+        background-color: orange;
+    }
+
+    .ColorBox:nth-child(6) {
+        background-color: purple;
+    }
+</style>
+
+
+<body>
+    <div class="main">
+        <h1 id="header">Color Scheme Switcher</h1>
+        <div class="box">
+            <div id="first" class="ColorBox">default</div>
+            <div id="second" class="ColorBox">red</div>
+            <div id="third" class="ColorBox">blue</div>
+            <div id="fourth" class="ColorBox">green</div>
+            <div id="fifth" class="ColorBox">orange</div>
+            <div id="sixth" class="ColorBox">purple</div>
+        </div>
+
+        <h2 style="text-align: center;">Try clicking one of the colors above to change the background color of this page!
+        </h2>
+    </div>
+</body>
+
+<script>
+    document.getElementById("first").addEventListener("click", function () {
+        document.body.style.background = "white";
+
+    })
+    document.getElementById("second").addEventListener("click", function () {
+        document.body.style.background = "red";
+    })
+    document.getElementById("third").addEventListener("click", function () {
+        document.body.style.background = "blue";
+    })
+    document.getElementById("fourth").addEventListener("click", function () {
+        document.body.style.background = "green";
+    })
+    document.getElementById("fifth").addEventListener("click", function () {
+        document.body.style.background = "orange";
+    })
+    document.getElementById("sixth").addEventListener("click", function () {
+        document.body.style.background = "purple";
+    })
+
+</script>
+
+</html>
