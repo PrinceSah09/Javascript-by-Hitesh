@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .todo {
+        border: 1px solid black;
+        background-color: #212121;
+        color: #fff;
+        height: 800px;
+
+    }
+
+    .todo h1 {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    #taskInput {
+        display: flex;
+        padding: 15px;
+        border-radius: 12px;
+        width: 290px;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .data {
+        border: 1px solid white;
+        width: 400px;
+        overflow: hidden;
+        margin: auto;
+        background-color: aquamarine;
+        color: black;
+        border-radius: 20px;
+    }
+
+    #addTaskButton {
+        margin: 10px auto 10px auto;
+        display: flex;
+        padding: 10px;
+    }
+
+    .data h2 {
+        margin-left: 30px;
+    }
+</style>
+
+<body>
+    <div class="todo">
+        <h1>To Do</h1>
+        <input id="taskInput" class="inp" name="NewTask" type="text" placeholder="new task">
+        <button style="cursor: pointer" id="addTaskButton">Add Task</button>
+        <div class="data"></div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
